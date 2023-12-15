@@ -1,0 +1,33 @@
+<div id="<%= dom_id post %>">
+  <p>
+    <strong>Title:</strong>
+    <%= post.title %>
+  </p>
+
+  <p>
+    <strong>Body:</strong>
+    <%= post.body %>
+  </p>
+
+  <p>
+    <strong>Published at:</strong>
+    <%= post.published_at %>
+  </p>
+
+  <p>
+    <strong>User:</strong>
+    <%= post.user %>
+  </p>
+
+  <p>
+    <strong>Refernece:</strong>
+    <%= post.refernece %>
+  </p>
+  <p>
+      <strong></strong>
+      <% if product.image.attached? %>
+      <%= image_tag product.image , :width => 300 ,:height => 300 %>
+      <% end %>
+  </p>
+
+</div>
